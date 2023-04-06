@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="83429da229cf4265923ec008f90131c0" Name="Diagram1">
+        <EntityTypeShape EntityType="bibliothequeModel.Adresse" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bibliothequeModel.Domaine" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bibliothequeModel.Emprunter" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bibliothequeModel.Livre" Width="1.5" PointX="8.25" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="bibliothequeModel.Personne" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="bibliothequeModel.Role" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="bibliothequeModel.FK__Personne__idAdre__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="bibliothequeModel.FK__Livre__idDomaine__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="bibliothequeModel.FK__Emprunter__idLec__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="bibliothequeModel.FK__Emprunter__idLiv__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="bibliothequeModel.FK__Livre__idPersonn__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="bibliothequeModel.FK__Personne__idRole__3B75D760" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
