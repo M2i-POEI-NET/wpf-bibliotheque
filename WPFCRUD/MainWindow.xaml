@@ -11,18 +11,17 @@
         <Label x:Name="description_lbl" Content="Description" HorizontalAlignment="Left" Margin="22,89,0,0" VerticalAlignment="Top" Height="38" Width="105"/>
         <TextBox x:Name="nom_tbx" HorizontalAlignment="Left" Margin="165,29,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="182" Height="34"/>
         <TextBox x:Name="description_tbx" HorizontalAlignment="Left" Margin="165,89,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="182" Height="34"/>
-        <Button x:Name="insert_btn" Content="Insert" HorizontalAlignment="Left" Margin="243,166,0,0" VerticalAlignment="Top" Height="29" Width="104"/>
-        <Button x:Name="clear_btn" Content="Clear" HorizontalAlignment="Left" Margin="165,166,0,0" VerticalAlignment="Top" Height="29" Width="65"/>
-        <Button x:Name="load_btn" Content="Load Domains" HorizontalAlignment="Left" Margin="32,210,0,0" VerticalAlignment="Top" Height="39" Width="118"/>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="123" Margin="32,256,0,0" VerticalAlignment="Top" Width="419" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-        <Button x:Name="delete_btn" Content="Delete" HorizontalAlignment="Left" Height="31" Margin="348,393,0,0" VerticalAlignment="Top" Width="95"/>
+        <Button x:Name="insert_btn" Content="Insert" HorizontalAlignment="Left" Margin="243,166,0,0" VerticalAlignment="Top" Height="29" Width="104" Click="insert_btn_Click"/>
+        <Button x:Name="clear_btn" Content="Clear" HorizontalAlignment="Left" Margin="165,166,0,0" VerticalAlignment="Top" Height="29" Width="65" Click="clear_btn_Click"/>
+        <Button x:Name="load_btn" Content="Load Domains" HorizontalAlignment="Left" Margin="32,210,0,0" VerticalAlignment="Top" Height="39" Width="118" Click="load_btn_Click"/>
+        <DataGrid x:Name="griddomains" HorizontalAlignment="Left" Height="123" Margin="32,256,0,0" VerticalAlignment="Top" Width="419" SelectionChanged="griddomains_SelectionChanged"/>
+        <Button x:Name="delete_btn" Content="Delete" HorizontalAlignment="Left" Height="31" Margin="348,393,0,0" VerticalAlignment="Top" Width="95" Click="delete_btn_Click"/>
         <Label x:Name="nom_lbl_Copy" Content="Nom" HorizontalAlignment="Left" Margin="486,256,0,0" VerticalAlignment="Top" Height="34" Width="105"/>
-        <TextBox x:Name="nom_tbx_Copy" HorizontalAlignment="Left" Margin="165,29,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="182" Height="34"/>
         <Label x:Name="nom" Content="Nom: " HorizontalAlignment="Left" Margin="486,256,0,0" VerticalAlignment="Top" Height="34" Width="76"/>
         <TextBox x:Name="nom_update_tbx" HorizontalAlignment="Left" Margin="577,256,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="182" Height="34"/>
         <Label x:Name="Desciption" Content="Description: " HorizontalAlignment="Left" Margin="486,317,0,0" VerticalAlignment="Top" Height="34" Width="76"/>
         <TextBox x:Name="description_update_tbx" HorizontalAlignment="Left" Margin="577,318,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="182" Height="34"/>
-        <Button x:Name="update_btn" Content="Update" HorizontalAlignment="Left" Height="29" Margin="643,374,0,0" VerticalAlignment="Top" Width="116"/>
+        <Button x:Name="update_btn" Content="Update" HorizontalAlignment="Left" Height="29" Margin="643,374,0,0" VerticalAlignment="Top" Width="116" Click="update_btn_Click"/>
 
     </Grid>
 </Window>

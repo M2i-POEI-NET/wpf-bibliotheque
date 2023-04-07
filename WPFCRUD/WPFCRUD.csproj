@@ -64,6 +64,30 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Adresse.cs">
+      <DependentUpon>BibliothequeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BibliothequeDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BibliothequeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domaine.cs">
+      <DependentUpon>BibliothequeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Emprunter.cs">
+      <DependentUpon>BibliothequeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Livre.cs">
+      <DependentUpon>BibliothequeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Personne.cs">
+      <DependentUpon>BibliothequeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Role.cs">
+      <DependentUpon>BibliothequeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VM\DomaineVM.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -125,6 +149,12 @@
     <Content Include="BibliothequeDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>BibliothequeDB.Context.cs</LastGenOutput>
+      <DependentUpon>BibliothequeDB.edmx</DependentUpon>
+    </Content>
+    <Content Include="BibliothequeDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BibliothequeDB.edmx</DependentUpon>
+      <LastGenOutput>BibliothequeDB.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
